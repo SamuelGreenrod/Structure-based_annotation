@@ -1,19 +1,19 @@
-## Structure-based_annotation
+# Structure-based_annotation
 
-# Program overview
+## Program overview
 This repository contains scripts required to annotate coding sequences based on their predicted 3d structures. The pipeline takes predicted protein sequences as input, either extracted from a Genbank file or in a multifasta or single fasta file. Protein sequences are then run through Alphafold 2.0 to determine their predicted structures. Predicted protein structures are then run through DeepFRI, a structure-function prediction tool, to predict their potential function. 
 
 If you find this tool useful and use it in your own publications then please reference the original publication which this program was written for and tested in: https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full. Thank you!
 
 If you have any problems using these scripts then please create a GitHub issue. Also, if you have any advice or comments to improve the scripts then please also add an issue and we can discuss updating the scripts. Thank you and I hope this is useful!
 
-# Dependencies
+## Dependencies
 * [Python](https://www.python.org/) v3.7
 * Access to a Slurm scheduler (for sbatch script submissions) - Alphafold takes a long time to Slurm submission is recommended.
 * Alphafold v2.0 (https://github.com/kuixu/alphafold)
 * DeepFRI (https://github.com/flatironinstitute/DeepFRI)
 
-# Installation
+## Installation
 1. Download scripts to working directory:
 ```
 # Download scripts
@@ -39,7 +39,7 @@ pip install .
 cd ..
 ```
 
-# File edits before running
+## File edits before running
 For the program to run correctly, the "Alphafold_sbatch_skeleton.sh" slurm script must be edited to include the Alphafold loading and running commands used by your own cluster. This will include:
 
 * Modifying the --gres and --partition commands to decide which gpus should be used, or removed if only cpus are used.
@@ -49,7 +49,7 @@ For the program to run correctly, the "Alphafold_sbatch_skeleton.sh" slurm scrip
 * Modify command to run Alphafold - original command is an adaptation of the traditional Alphafold command for my local cluster. Note: --output_dir=output_folder must be kept the same for the program to function properly.
 
 
-# Running Structure-based_annotation
+## Running Structure-based_annotation
 To generate predicted protein functions, create an sbatch script and run the `Structure-based_annotation.py` script with the following options:
 * `-i, --input` str, Genbank, multifasta, or single fasta file containing proteins of interest.
 * `-p, --protein_label` str, if Genbank provided a string must be provided which is searched for. CDS with annotations containing string will be annotated.
