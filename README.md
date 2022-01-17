@@ -67,7 +67,11 @@ Generated output folders/files:
   * `Best_deepfri_hits.csv` file, summary file containing top hits for each protein run compiled into one file for easy analysis.
 
 ## Example run
-Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. These can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with the command:
+Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. 
+
+These can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. 
+
+The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with the command:
 ```
 python Structure-based_annotation.py -i Respiration.fasta -o Respiration_annotation
 ```
