@@ -1,0 +1,29 @@
+Protein,GO_term/EC_number,Score,GO_term/EC_number name
+LOC_1_1,GO:0016757,0.15871,"transferase activity, transferring glycosyl groups"
+LOC_1_2,GO:0016788,0.21507,"hydrolase activity, acting on ester bonds"
+LOC_1_4,GO:0016788,0.13886,"hydrolase activity, acting on ester bonds"
+LOC_1_7na,na,na
+LOC_1_8na,na,na
+LOC_1_9,GO:0005215,0.94041,transporter activity
+LOC_1_12na,na,na
+LOC_1_15,GO:0003677,0.19199,DNA binding
+LOC_1_18,GO:0003723,0.20913,RNA binding
+LOC_1_19,GO:0016895,0.91022,"exodeoxyribonuclease activity, producing 5'-phosphomonoesters"
+LOC_1_20,GO:0003677,0.30268,DNA binding
+LOC_1_24,GO:0003677,0.63090,DNA binding
+LOC_1_25,GO:0003677,0.91422,DNA binding
+LOC_1_26,GO:0022857,0.17785,transmembrane transporter activity
+LOC_1_27na,na,na
+LOC_1_30,GO:0005198,0.92011,structural molecule activity
+LOC_1_31,GO:0003677,0.82856,DNA binding
+LOC_1_32,GO:0017076,0.77057,purine nucleotide binding
+LOC_1_33na,na,na
+LOC_1_34,GO:0046914,0.25447,transition metal ion binding
+LOC_1_35,GO:0016829,0.20727,lyase activity
+LOC_1_36,GO:0003677,0.17416,DNA binding
+LOC_1_38,GO:0016788,0.34641,"hydrolase activity, acting on ester bonds"
+LOC_1_39,GO:0032553,0.65813,ribonucleotide binding
+LOC_1_40,GO:0008233,0.83821,peptidase activity
+LOC_1_41,GO:0016772,0.57553,"transferase activity, transferring phosphorus-containing groups"
+LOC_1_42,GO:0016829,0.50003,lyase activity
+LOC_1_43,GO:0030246,0.12414,carbohydrate binding
