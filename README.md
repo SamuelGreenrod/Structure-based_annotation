@@ -20,8 +20,8 @@ If you have any problems using these scripts then please create a GitHub issue. 
 git clone https://github.com/SamuelGreenrod/Structure-based_annotation
 
 # Move to working directory
-cp Structure-based_annotation/*.py .
-cp Structure-based_annotation/*.sh .
+cp Structure-based_annotation/Scripts/*.py .
+cp Structure-based_annotation/Scripts/*.sh .
 ```
 2. Install Alphafold 2.0
 3. Install DeepFRI:
