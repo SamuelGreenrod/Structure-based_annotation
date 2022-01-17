@@ -9,7 +9,7 @@ If you have any problems using these scripts then please create a GitHub issue. 
 
 ## Dependencies
 * [Python](https://www.python.org/) v3.7
-* Access to a Slurm scheduler (for sbatch script submissions) - Alphafold takes a long time to Slurm submission is recommended.
+* Access to a Slurm scheduler (for sbatch script submissions) - Alphafold takes a long time so Slurm submission is recommended.
 * Alphafold v2.0 (https://github.com/kuixu/alphafold)
 * DeepFRI (https://github.com/flatironinstitute/DeepFRI)
 
