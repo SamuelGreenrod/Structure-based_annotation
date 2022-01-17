@@ -68,10 +68,13 @@ Generated output folders/files:
 
 ## Example run
 Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. These can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with the command:
-`python Structure-based_annotation.py -i Respiration.fasta -o Respiration_annotation`
+```
+python Structure-based_annotation.py -i Respiration.fasta -o Respiration_annotation
+```
 
 For the Respiration dataset, the summary output (Best_deepfri_hits.csv) looked like:
-`Protein,GO_term/EC_number,Score,GO_term/EC_number name
+```txt
+Protein,GO_term/EC_number,Score,GO_term/EC_number name
 A,GO:0015318,0.99955,inorganic molecular entity transmembrane transporter activity
 B,GO:0015318,0.99890,inorganic molecular entity transmembrane transporter activity
 C,GO:0003955,0.24991,NAD(P)H dehydrogenase (quinone) activity
@@ -81,13 +84,18 @@ F,GO:0050136,0.99999,NADH dehydrogenase (quinone) activity
 G,GO:0016651,0.51225,"oxidoreductase activity, acting on NAD(P)H"
 H,GO:0016853,0.78599,isomerase activity
 I,GO:0008270,0.99974,zinc ion binding
-J,GO:0005215,0.50252,transporter activity`
+J,GO:0005215,0.50252,transporter activity
+
+```
 
 The tools was also tested on hypothetical proteins acquired from annotated prophage elements (see https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full). This allowed the tool's power to be determined. This was done using the command:
-`python Structure-based_annotation.py -i Prophage_Genbank.gbk -p "Hypothetical" -o Prophage_hypothetical_annotation`
+```
+python Structure-based_annotation.py -i Prophage_Genbank.gbk -p "Hypothetical" -o Prophage_hypothetical_annotation
+```
 
 An example summary output (Best_deepfri_hits.csv) from this is:
-`Protein,GO_term/EC_number,Score,GO_term/EC_number name
+```txt
+Protein,GO_term/EC_number,Score,GO_term/EC_number name
 LOC_1_1,GO:0016757,0.15871,"transferase activity, transferring glycosyl groups"
 LOC_1_2,GO:0016788,0.21507,"hydrolase activity, acting on ester bonds"
 LOC_1_4,GO:0016788,0.13886,"hydrolase activity, acting on ester bonds"
@@ -115,7 +123,8 @@ LOC_1_39,GO:0032553,0.65813,ribonucleotide binding
 LOC_1_40,GO:0008233,0.83821,peptidase activity
 LOC_1_41,GO:0016772,0.57553,"transferase activity, transferring phosphorus-containing groups"
 LOC_1_42,GO:0016829,0.50003,lyase activity
-LOC_1_43,GO:0030246,0.12414,carbohydrate binding`
+LOC_1_43,GO:0030246,0.12414,carbohydrate binding
+```
 
 
 
