@@ -85,7 +85,6 @@ G,GO:0016651,0.51225,"oxidoreductase activity, acting on NAD(P)H"
 H,GO:0016853,0.78599,isomerase activity
 I,GO:0008270,0.99974,zinc ion binding
 J,GO:0005215,0.50252,transporter activity
-
 ```
 
 The tools was also tested on hypothetical proteins acquired from annotated prophage elements (see https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full). This allowed the tool's power to be determined. This was done using the command:
