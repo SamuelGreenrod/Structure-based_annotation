@@ -37,12 +37,11 @@ cd DeepFRI/
 
 # Install DeepFRI dependencies
 pip install .
+cd ..
 
 # Install trained models
 wget https://users.flatironinstitute.org/vgligorijevic/public_www/DeepFRI_data/newest_trained_models.tar.gz
-tar xvzf newest_trained_models.tar.gz
-
-cd..
+tar xvzf newest_trained_models.tar.gz -C DeepFRI/
 ```
 
 ## File edits before running
