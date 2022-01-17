@@ -1,7 +1,7 @@
 # Structure-based_annotation
 
 ## Program overview
-This repository contains scripts required to annotate coding sequences based on their predicted 3d structures. The pipeline takes predicted protein sequences as input, either extracted from a Genbank file or in a multifasta or single fasta file. Protein sequences are then run through Alphafold 2.0 to determine their predicted structures. Predicted protein structures are then run through DeepFRI, a structure-function prediction tool, to predict their potential function. 
+This repository contains scripts required to annotate coding sequences based on their predicted 3d structures. The pipeline takes predicted protein sequences as input, either extracted from a Genbank file, multifasta, or single fasta file format. Protein sequences are then extracted and run through Alphafold 2.0 to determine their predicted structures. Predicted protein structures are then run through DeepFRI, a structure-function prediction tool, to predict their potential function. 
 
 If you find this tool useful and use it in your own publications then please reference the original publication which this program was written for and tested in: https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full. Thank you!
 
