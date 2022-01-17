@@ -1,7 +1,5 @@
-# Python script to extract proteins from Genbank files are re-annotate them using DeepFRI
-# Writer - Samuel Greenod
-# Date - 29/10/2021
-
+# Author - Samuel Greenod (samuel.greenrod@magd.ox.ac.uk)
+# Main script used to predict protein structures with Alphafold 2.0 and determine their potential function using DeepFRI.
 
 from Bio import SeqIO
 from datetime import date
