@@ -14,29 +14,35 @@ If you have any problems using these scripts then please create a GitHub issue. 
 * DeepFRI (https://github.com/flatironinstitute/DeepFRI)
 
 ## Installation
-1. Download scripts to working directory:
+1. Create conda environment to install dependencies
+```
+conda create -n Structure-based_annotation python=3.7
+conda activate Structure-based_annotation
+```
+2. Download scripts to working directory:
 ```
 # Download scripts
 git clone https://github.com/SamuelGreenrod/Structure-based_annotation
 
-# Move to working directory
+# Move scripts to working directory
 cp Structure-based_annotation/Scripts/*.py .
 cp Structure-based_annotation/Scripts/*.sh .
 ```
-2. Install Alphafold 2.0 (See here: https://github.com/kuixu/alphafold)
-3. Install DeepFRI:
+3. Install Alphafold 2.0 (See here: https://github.com/kuixu/alphafold)
+4. Install DeepFRI and trained models:
 ```
-# Create conda environment to install DeepFRI dependencies
-conda create -n Structure-based_annotation python=3.7
-conda activate Structure-based_annotation
-
 # Download DeepFRI scripts
 git clone https://github.com/flatironinstitute/DeepFRI
 cd DeepFRI/
 
 # Install DeepFRI dependencies
 pip install .
-cd ..
+
+# Install trained models
+wget https://users.flatironinstitute.org/vgligorijevic/public_www/DeepFRI_data/newest_trained_models.tar.gz
+tar xvzf newest_trained_models.tar.gz
+
+cd..
 ```
 
 ## File edits before running
