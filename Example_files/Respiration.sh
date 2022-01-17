@@ -7,5 +7,5 @@
 #SBATCH --time=24:00:00
 #SBATCH --output=%x-%j.log
 
-python Main_python_script.py -i Respiration.fasta -o Respiration_prediction
+python Structure-based_annotation.py -i Respiration.fasta -o Respiration_prediction
 
