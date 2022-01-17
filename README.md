@@ -46,7 +46,7 @@ For the program to run correctly, the "Alphafold_sbatch_skeleton.sh" slurm scrip
 * Modify the --time command to account for how long the longest structure-prediction will take (will take longer depending on cpus or gpus used, and how many cpus used.
 * Optionally insert a loading command to load Alphafold as a module.
 * Insert a path to the Alphafold databases. 
-* Modify command to run Alphafold - original command is an adaptation of the traditional Alphafold command for my local cluster. Note: --job-name=jobid; --fasta_paths=input_file; --output_dir=output_folder; commands must be kept the same for the program to function properly.
+* Modify command to run Alphafold - original command is an adaptation of the traditional Alphafold command for my local cluster. Note: `--job-name=jobid`; `--fasta_paths=input_file`; `--output_dir=output_folder`; commands must be kept the same for the program to function properly.
 
 
 ## Running Structure-based_annotation
