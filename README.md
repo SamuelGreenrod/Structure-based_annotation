@@ -23,7 +23,7 @@ git clone https://github.com/SamuelGreenrod/Structure-based_annotation
 cp Structure-based_annotation/Scripts/*.py .
 cp Structure-based_annotation/Scripts/*.sh .
 ```
-2. Install Alphafold 2.0
+2. Install Alphafold 2.0 (See here: https://github.com/kuixu/alphafold)
 3. Install DeepFRI:
 ```
 # Create conda environment to install DeepFRI dependencies
