@@ -42,6 +42,7 @@ cd ..
 # Install trained models
 wget https://users.flatironinstitute.org/vgligorijevic/public_www/DeepFRI_data/newest_trained_models.tar.gz
 tar xvzf newest_trained_models.tar.gz
+rm newest_trained_models.tar.gz
 ```
 
 ## File edits before running
