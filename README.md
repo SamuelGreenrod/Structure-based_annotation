@@ -71,11 +71,22 @@ Generated output folders/files:
   * `Best_deepfri_hits.csv` file, present in the `DeepFRI_output` folder, summary file containing top hits for each protein run compiled into one file for easy analysis.
 
 ## Example run
+To test if the installations have been successful, the structure-based annotation tool can be tested on a very short protein (TRP-CAGE - labelled Short_protein.fasta in the Example folder) which should run relatively quickly (< 45 mins). To run use either submit the Short_protein.sh slurm script or create a new script and run this command:
+```
+python Structure-based_annotation.py -i Short_protein.fasta -o Short_protein_annotation
+```
+
+Whilst the tool was unable to predict a function, the final summary results should look like:
+```txt
+Protein,GO_term/EC_number,Score,GO_term/EC_number name
+Ana,na,na
+```
+
 Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. 
 
 These can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. 
 
-The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with the command:
+The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with variations of the command:
 ```
 python Structure-based_annotation.py -i Respiration.fasta -o Respiration_annotation
 ```
