@@ -82,11 +82,12 @@ Protein,GO_term/EC_number,Score,GO_term/EC_number name
 Ana,na,na
 ```
 
-Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. 
+## Testing tool accuracy and power
+Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. The results can all be found in the original paper: https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full.
 
-These can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. 
+Sequences for these can be found in the Respiration.fasta; T3E.fasta; Transporters.fasta; and Transcriptional_regulators.fasta files in this repository. 
 
-The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts with variations of the command:
+The tests were done using the Respiration.sh; T3E.sh; Transporters.sh; and Transcriptional_regulators.sh scripts which contain variations of the command:
 ```
 python Structure-based_annotation.py -i Respiration.fasta -o Respiration_annotation
 ```
