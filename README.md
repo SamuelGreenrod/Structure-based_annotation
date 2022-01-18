@@ -80,7 +80,7 @@ python Structure-based_annotation.py -i Short_protein.fasta -o Short_protein_ann
 Whilst the tool was unable to predict a function, the final summary results should look like:
 ```txt
 Protein,GO_term/EC_number,Score,GO_term/EC_number name
-Ana,na,na
+Short_proteinna,na,na
 ```
 
 ## Testing tool accuracy and power
