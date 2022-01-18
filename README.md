@@ -68,8 +68,7 @@ Generated output folders/files:
 * `DeepFRI_output` folder, contains folders with results from DeepFRI for each single fasta pdb file from Alphafold output folder. Each DeepFRI_output folder contains:
   * `#NAME_MF_pred_scores.json` file, contains predicted goterms and gonames for each chain in pdb file
   * `#NAME_MF_predictions.csv` file, contains protein_id, predicted GO term, DeepFRI score (>0.5 considered significant true hit), and GO term name.
-  * `DeepFRI_output` folder also contains:
-   * `Best_deepfri_hits.csv` file, summary file containing top hits for each protein run compiled into one file for easy analysis.
+  * `Best_deepfri_hits.csv` file, present in the `DeepFRI_output` folder, summary file containing top hits for each protein run compiled into one file for easy analysis.
 
 ## Example run
 Structure-based_annotation was tested on four types of known function genes, acquired from the R. solanacearum GMI1000 gbff file (downloaded from: https://www.ncbi.nlm.nih.gov/genome/490?genome_assembly_id=300190). These included genes involved in: Bacterial respiration; Type III effectors; Membrane transporters; Transcriptional regulators. 
