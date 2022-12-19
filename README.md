@@ -3,7 +3,7 @@
 ## Program overview
 This repository contains Python scripts required to annotate coding sequences based on their predicted 3-D structures. The pipeline takes predicted protein sequences as input, either extracted from a Genbank file, multifasta, or single fasta file format. Protein sequences are then extracted and run through Alphafold 2.0 to determine their predicted structures. Alphafold 2.0 jobs are run in parallel using a Slurm batch job. The best predicted protein structures are then run through DeepFRI, a structure-function prediction tool, to predict their potential function. 
 
-If you find this tool useful and use it in your own publications then please reference the original publication which this program was written for and tested in: https://www.biorxiv.org/content/10.1101/2021.10.20.465097v1.full. Thank you!
+If you find this tool useful and use it in your own publications then please reference the original publication which this program was written for and tested in: Greenrod, S.T.E., Stoycheva, M., Elphinstone, J. et al. Global diversity and distribution of prophages are lineage-specific within the Ralstonia solanacearum species complex. BMC Genomics 23, 689 (2022). https://doi.org/10.1186/s12864-022-08909-7. Thank you!
 
 If you have any problems using these scripts then please create a GitHub issue. Also, if you have any advice or comments to improve the scripts then please also add an issue and we can discuss updating the scripts. Thank you and I hope this is useful!
 
